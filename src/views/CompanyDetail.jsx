@@ -21,10 +21,10 @@ export default function CompanyDetail() {
         <>
             <h3 className='mt-3 mb-4'>{company} jobs:</h3>
             {companyJobs.data && companyJobs.data.map(job =>
-                <>
+                <div key={job._id}>
                     <h5>{job.title}</h5>
                     <hr />
-                </>
+                </div>
             )}
         </>
     );

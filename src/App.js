@@ -6,12 +6,16 @@ import CompanyDetail from './views/CompanyDetail';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route exact path="/" element={<Homepage />}></Route>
-        <Route exact path="/:company" element={<CompanyDetail />}></Route>
-      </Routes>
-    </BrowserRouter>
+    <>
+      <div className='App'>
+        <BrowserRouter>
+          <Routes>
+            <Route exact path="/" element={<Homepage />}></Route>
+            <Route exact path="/:company" element={<CompanyDetail />}></Route>
+          </Routes>
+        </BrowserRouter>
+      </div>
+    </>
   );
 }
 
